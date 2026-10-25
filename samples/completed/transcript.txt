@@ -1,0 +1,26 @@
+Run finished. 3 of 3 stages ran. 7 task operations ran. A finished run does not establish that its calculations match the intended problem.
+
+Stage 1. 3 independent tasks in one group.
+Stage status: completed.
+Task C4: sum. Inputs: data equals 1000 numbers. Computed result: 500500. Published as total.
+Task E4: count. Inputs: data equals 1000 numbers. Computed result: 1000. Published as n.
+Task G4: maximum. Inputs: data equals 1000 numbers. Computed result: 1000. Published as high.
+
+Stage 2. 2 independent tasks in one group.
+Stage status: completed.
+Task A4: divide. Inputs: total equals 500500; n equals 1000. Computed result: 500.5. Published as average.
+Task B4: divide. Inputs: high equals 1000; n equals 1000. Computed result: 1.0. Published as normalized_max.
+
+Stage 3. 2 independent tasks in one group.
+Stage status: completed.
+Task D5: multiply. Inputs: average equals 500.5; n equals 1000. Computed result: 500500.0. Published as reconstructed_total.
+Task F5: add. Inputs: average equals 500.5; normalized_max equals 1.0. Computed result: 501.5. Published as adjusted_average.
+
+Published results:
+total: 500500
+n: 1000
+high: 1000
+average: 500.5
+normalized_max: 1.0
+reconstructed_total: 500500.0
+adjusted_average: 501.5
