@@ -1,0 +1,19 @@
+Run stopped after a task failure. 3 of 4 stages ran. 4 task operations ran. A finished run does not establish that its calculations match the intended problem.
+
+Stage 1. One task.
+Stage status: completed.
+Task C4: sum. Inputs: data equals 1000 numbers. Computed result: 500500. Published as total.
+
+Stage 2. One task.
+Stage status: completed.
+Task E4: subtract. Inputs: total equals 500500; total equals 500500. Computed result: 0. Published as zero.
+
+Stage 3. 2 independent tasks in one group.
+Stage status: failed.
+Task G4: divide. Inputs: total equals 500500; zero equals 0. Failed: ZeroDivisionError: division by zero.
+Task A4: multiply. Inputs: total equals 500500; total equals 500500. Computed result: 250500250000. Not published because a task in this stage failed.
+No outputs from this stage were published. Later stages did not run.
+
+Published results:
+total: 500500
+zero: 0
